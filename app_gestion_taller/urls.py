@@ -1,13 +1,18 @@
 from django.urls import path
+from . import views
 from .views import (
-    lista_clientes, 
-    detalle_cliente, 
-    registrar_cliente, 
-    registrar_coche, 
-    registrar_servicio, 
-    buscar_coche_por_matricula, 
-    buscar_coches_de_cliente, 
-    buscar_servicios_de_coche
+    lista_clientes,
+    detalle_cliente,
+    registrar_cliente,
+    registrar_coche,
+    buscar_coche_por_matricula,
+    buscar_coches_de_cliente,
+    registrar_servicio,
+    buscar_servicios_de_coche,
+    nuevo_cliente,
+    nuevo_coche,
+    nuevo_servicio,
+    asignar_servicio
 )
 
 urlpatterns = [
@@ -19,4 +24,8 @@ urlpatterns = [
     path('clientes/<int:cliente_id>/coches/', buscar_coches_de_cliente, name='buscar_coches_de_cliente'),
     path('servicios/registrar/', registrar_servicio, name='registrar_servicio'),
     path('coches/<int:coche_id>/servicios/', buscar_servicios_de_coche, name='buscar_servicios_de_coche'),
+    path('clientes/nuevo/', nuevo_cliente, name='nuevo_cliente'), 
+    path('coches/nuevo/', nuevo_coche, name='nuevo_coche'),
+    path('servicios/nuevo/', nuevo_servicio, name='nuevo_servicio'),
+    path('asignar_servicio/', asignar_servicio, name='asignar_servicio'),
 ]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}Mi Taller{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'inicio' %}">Inicio</a> |
+        <a href="{% url 'acerca' %}">Acerca de</a> |
+        <a href="{% url 'contacto' %}">Contacto</a>
+    </nav>
+    <hr>
+
+    <main>
+        {% block contenido %}
+        
+        {% endblock %}
+    </main>
+
+</body>
+</html>
