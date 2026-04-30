@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Coches</title>
+</head>
+<body>
+    <h1>Coches registrados en el taller</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Matrícula</th>
+                <th>Propietario</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for coche in coches %}
+            <tr>
+                <td>{{ coche.id }}</td>
+                <td>{{ coche.marca }}</td>
+                <td>{{ coche.modelo }}</td>
+                <td>{{ coche.matricula }}</td>
+                <td>{{ coche.cliente.nombre }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <br>
+    <a href="{% url 'nuevo_coche' %}">Registrar otro coche</a>
+</body>
+</html>
