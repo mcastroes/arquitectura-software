@@ -2,7 +2,7 @@ Recopilación de prácticas de Django para la asignatura de Arquitectura del Sof
 
 En la rama 'main' se guarda la última versión de la evaluación continua, incluyendo todas las prácticas. 
 
-Cada práctica individual se almacena en las siguientes ramas:
+Cada práctica individual acumulada se almacena en las siguientes ramas:
 
 - practica3
 - practica4
