@@ -4,9 +4,9 @@ En la rama 'main' se guarda la última versión de la evaluación continua, incl
 
 Cada práctica individual se almacena en las siguientes ramas:
 
-- practica-3
-- practica-4
-- practica-5
-- practica-6
+- practica3
+- practica4
+- practica5
+- practica6
 - fastapi-1
 - fastapi-2
